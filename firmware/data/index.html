@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonar Mapper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Sonar Mapper</h1>
+    <span id="status" class="status">connecting…</span>
+    <button id="demo-toggle" type="button">Demo mode</button>
+  </header>
+
+  <main>
+    <canvas id="radar" width="800" height="440" aria-label="Live polar distance map"></canvas>
+
+    <dl class="readout">
+      <dt>angle</dt><dd id="r-angle">–</dd>
+      <dt>distance</dt><dd id="r-dist">–</dd>
+    </dl>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
